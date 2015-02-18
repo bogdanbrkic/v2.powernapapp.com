@@ -1,0 +1,63 @@
+/* news */
+
+.news {
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+  img {
+    width:100%;
+  }
+
+}
+
+.news__item{ //row like
+  @include row();
+  @include outer-container;
+}
+
+.news__txt-title {
+  font-family: $font-roboto-condensed;
+  font-font-weight: 300;
+  font-size: em(34);
+  line-height:1.25em;
+  text-transform:uppercase;
+  padding-bottom: 1.5em;
+  color: #333;
+
+  @include media($mobile) {
+    font-size: em(22);
+  }
+
+}
+
+.news__txt-p {
+  color: #666;
+  font-font-weight: 300;
+}
+
+
+//news grid
+
+.col-1 {
+  @include span-columns(6);
+}
+
+.col-1-2 {
+  @include span-columns(3);
+
+  @include media($mobile) {
+    @include span-columns(6);
+  }
+}
+
+.news__spacer {
+  margin: 2em 0 2em 0;
+  border-top: 1px solid #ccc;
+}
+
+.p-lr-1 {
+  @include media($mobile) {
+     padding: 0em 1em 0em 1em;
+  }
+}

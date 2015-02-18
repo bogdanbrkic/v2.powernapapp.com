@@ -1,0 +1,68 @@
+/* index */
+.intro-bckg--img {
+  background: url("../../img/top-content-photo.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.intro--content {
+  height: em(1000);
+  padding-top: em(140);
+}
+.intro--left-content {
+  @include span-columns(5);
+
+  @include media($mobile) {
+    // @include span-columns(4);
+    display: none;
+  }
+}
+.left-content--img {
+  float: right;
+}
+.intro--right-content {
+  @include span-columns(7);
+  margin-top: 110px;
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+.intro--logo {
+
+}
+h1.intro--title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 100px;
+  color: #fff;
+  line-height: 132px;
+}
+.intro--subtitle{
+  font-family: Helvetica;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.intro--dash {
+  margin-left: 19.25em;
+  border-top: 1px solid #ccc;
+  width: em(30);
+}
+.intro--btn-copy,
+.footer--btn-copy {
+  /* Available on App Sto: */
+  font-weight: 300;
+  font-size: 16px;
+  color: #999;
+}
+.intro-msg {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 60px;
+  color: #333;
+  line-height: 64px;
+}
+.l-col--steps-mtop {
+  margin-top: em(40);
+}
