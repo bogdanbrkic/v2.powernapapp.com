@@ -14,7 +14,9 @@ header {
 }
 /* nav */
 nav {
-  padding-top: em(70);
+  position: absolute;
+  width: 100%;
+  padding-top: 2%;
   text-align: right;
   @include row();
   padding-right: 4%;
@@ -124,6 +126,11 @@ a.btn--black {
 .dash-left{
   text-align: -webkit-left;
   margin: 0px 0px 40px;
+}
+.dash-center--intro{
+  margin: 10% auto 10%;
+  text-align: center;
+  border-top: 2px solid #ccc;
 }
 /* footer */
 .footer {

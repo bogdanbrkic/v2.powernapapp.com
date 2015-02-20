@@ -1,0 +1,6 @@
+// init
+
+/* 
+ * main menu
+ */
+initMobileMenu();

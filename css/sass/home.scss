@@ -6,19 +6,26 @@
   background-repeat: no-repeat;
 }
 .intro--content {
-  height: em(1000);
-  padding-top: em(140);
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .intro--left-content {
   @include span-columns(5);
 
   @include media($mobile) {
-    // @include span-columns(4);
+    @include span-columns(4);
     display: none;
+  }
+  @include media($mobile-up) {
+    padding-left: 4%;
   }
 }
 .left-content--img {
   float: right;
+
+  @include media($mobile) {
+
+  }
 }
 .intro--right-content {
   @include span-columns(7);
@@ -31,12 +38,18 @@
 .intro--logo {
 
 }
+
 h1.intro--title {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 100px;
+  font-size: em(100);
   color: #fff;
   line-height: 132px;
+  // transition: all 0.5s ease;
+
+  @include media($mobile-up) {
+    font-size: em(50);
+  }
 }
 .intro--subtitle{
   font-family: Helvetica;

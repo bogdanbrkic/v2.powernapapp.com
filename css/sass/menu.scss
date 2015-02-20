@@ -1,0 +1,262 @@
+.menu {
+  // @include outer-container;
+  font-family: $nav-font-family;
+  font-size: rem(20);
+  font-weight: 300;
+
+  // hide menu from tablet down
+  @include media($tablet) {
+    display: none;
+  }
+}
+.menu:after{
+  //  padding-bottom: em(15);
+}
+
+.menu__item{
+  float: left;
+  padding-top: em(22);
+  margin-right: rem(25);
+}
+
+.menu__item--current{}
+
+/*
+  menu-mobile
+*/
+
+.cbp-spmenu {
+	background: #000000;
+	position: absolute;
+
+  .menu__item{
+    float: none;
+    padding-top: em(12);
+    padding-bottom: em(12);
+    padding-left: rem(25);
+    margin-right: rem(0);
+    color: #FFE149;
+    border-bottom: 1px solid #1A1A1A;
+  }
+
+  .menu__item--current{
+
+  }
+
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 501;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 501;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* --------- new mobile menu --------------*/
+
+.bt-menu {
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #333;
+  background-color: rgba(0,0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+  transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+
+  z-index: 502;
+
+  @include media($desktop) {
+    display: none;
+  }
+}
+
+.bt-menu.bt-menu-open {
+  // height: 100%;
+  // border-width: 30px 30px 30px 90px;
+  // background-color: rgba(0,0,0,0.3);
+  // -webkit-transition: border-width 0.3s, background-color 0.3s;
+  // transition: border-width 0.3s, background-color 0.3s;
+}
+
+.menu-open-opacity-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  -webkit-transition: border-width 0.3s, background-color 0.3s;
+  transition: border-width 0.3s, background-color 0.3s;
+}
+
+.bt-menu-open {
+  height: 100%;
+}
+
+.bt-menu-trigger {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  display: block;
+  width: em(30);
+  height: em(50);
+  cursor: pointer;
+
+  z-index: 502;
+}
+
+.bt-menu-trigger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #000;
+  font-size: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.bt-menu-open .bt-menu-trigger span {
+  background-color: transparent;
+}
+
+.bt-menu-trigger span:before,
+.bt-menu-trigger span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.bt-menu-trigger span:before {
+  -webkit-transform: translateY(-250%);
+  transform: translateY(-250%);
+}
+
+.bt-menu-trigger span:after {
+  -webkit-transform: translateY(250%);
+  transform: translateY(250%);
+}
+
+.bt-menu-open .bt-menu-trigger span:before {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+  background: #FFE700;
+}
+
+.bt-menu-open .bt-menu-trigger span:after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+  background: #FFE700;
+}
