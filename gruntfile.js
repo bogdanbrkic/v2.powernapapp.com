@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         separator: ';', sourceMap: true,
       },
       dist: {
-        src: ['js/plugins.js', 'js/openx.js', 'js/main.js' ],
+        src: ['js/plugins.js', 'js/classie.js', 'js/main.js' ],
         dest: 'build/js/base.js',
       },
     },

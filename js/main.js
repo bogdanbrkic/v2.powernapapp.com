@@ -1,4 +1,4 @@
-// init
+// init js
 
 /*
  * main menu

@@ -1,0 +1,83 @@
+/* sprite soc-ico */
+
+/* mobile nav ver @TODO */
+#cbp-spmenu{
+  .soc-ico--wrapper {
+    float: none;
+    margin-top: rem(18);
+    padding-left: rem(25);
+
+    @include media($mobile-up) {
+      display: inherit;
+    }
+  }
+}
+
+.soc-ico--wrapper {
+  // float: right;
+  margin-top: rem(18);
+  text-align:center;
+  width:100%;
+
+  @include media($mobile-up) {
+    display: none;
+  }
+}
+
+.soc-ico__container {
+  width:50%;
+  margin: 0 auto;
+}
+
+.soc-ico--footer-wrapper {
+  float: none;
+  margin-top: rem(0);
+}
+.soc-ico {
+  background: url("../../img/soc-ico.png") no-repeat top left;
+  width: 46px;
+  height: 46px;
+}
+.soc-ico.flkr-ico {
+  background-position: 0 -56px;
+  float: left;
+  @include transition (all 0.4s $ease-in-out-quad);
+}
+.soc-ico.flkr-ico:hover {
+  background-position: 0 0;
+  float: left;
+  @include transition (all 0.4s $ease-in-out-quad);
+
+}
+.soc-ico.insta-ico {
+  background-position: 0 -168px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+}
+.soc-ico.insta-ico:hover {
+  background-position: 0 -112px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+
+}
+.soc-ico.sc-ico {
+  background-position: 0 -280px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+}
+.soc-ico.sc-ico:hover {
+  background-position: 0 -224px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+
+}
+.soc-ico.you-tube {
+  background-position: 0 -392px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+}
+.soc-ico.you-tube:hover {
+  background-position: 0 -336px;
+  float: left;
+  @include transition(all 0.4s $ease-in-out-quad);
+}

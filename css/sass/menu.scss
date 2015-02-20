@@ -1,3 +1,12 @@
+/* menu */
+.desktop__menu {
+
+  // hide on mobile
+  @include media($mobile-up) {
+    display: none;
+  }
+}
+
 .menu {
   // @include outer-container;
   font-family: $nav-font-family;
@@ -16,7 +25,8 @@
 .menu__item{
   float: left;
   padding-top: em(22);
-  margin-right: rem(25);
+  // margin-right: rem(25);
+  list-style-type: none;
 }
 
 .menu__item--current{}
@@ -29,14 +39,17 @@
 	background: #000000;
 	position: absolute;
 
+  ul{
+    padding: initial;
+  }
+
+
   .menu__item{
     float: none;
-    padding-top: em(12);
-    padding-bottom: em(12);
-    padding-left: rem(25);
+    padding-top: em(22);
+    padding-bottom: em(22);
     margin-right: rem(0);
     color: #FFE149;
-    border-bottom: 1px solid #1A1A1A;
   }
 
   .menu__item--current{
@@ -73,7 +86,8 @@
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 240px;
+	// width: 240px;
+  width: 100%;
 	height: 100%;
 	top: 0;
 	z-index: 501;
@@ -112,7 +126,7 @@
 }
 
 .cbp-spmenu-right {
-	right: -240px;
+	right: -500px;
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {
@@ -166,7 +180,7 @@
 
   z-index: 502;
 
-  @include media($desktop) {
+  @include media($mobile-up) {
     display: none;
   }
 }
