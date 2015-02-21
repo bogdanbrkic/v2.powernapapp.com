@@ -12,23 +12,25 @@ header {
   margin-left: auto;
   position: relative;
 }
+
 /* nav */
-nav {
-  position: absolute;
-  width: 100%;
-  padding-top: 2%;
-  text-align: right;
-  @include row();
-  padding-right: 4%;
-}
-nav .link {
-  color: #fff;
-  font-family: 'HelveticaNeue-Light',Helvetica,Roboto;
-  font-size: rem(14);
-  text-decoration: none;
-  padding-right: em(50);
-}
+// nav {
+//   position: absolute;
+//   width: 100%;
+//   padding-top: 2%;
+//   text-align: right;
+//   @include row();
+//   padding-right: 4%;
+// }
+// nav .link {
+//   color: #fff;
+//   font-family: 'HelveticaNeue-Light',Helvetica,Roboto;
+//   font-size: rem(14);
+//   text-decoration: none;
+//   padding-right: em(50);
+// }
 /* row */
+
 .row--100p {
   @include row();
   text-align: center;
@@ -42,6 +44,7 @@ nav .link {
 .row {
   @include row();
   @include outer-container;
+  padding: 0 2%;  // @TODO samo za ispod desktopa .. tak oda svi imaju marigne leve i desne ..
 }
 /* button */
 input[type="submit"],
@@ -89,46 +92,49 @@ a.btn--black {
 .story {
   padding-top: em(140);
   padding-bottom: em(180);
+
+  @include media($mobile) {
+    padding-top: em(40);
+    padding-bottom: em(80);
+  }
 }
 .story-1-col {
-  // @include span-columns(8);
-  // @include shift(2);
-  padding-left: em(200);
-  padding-right: em(200);
+  @include span-columns(12);
 }
 .story-l-col {
   @include span-columns(6);
 
   @include media($mobile) {
     @include span-columns(4);
+    padding: 0 5%;
   }
-
 }
 .story-r-col {
   @include span-columns(6);
   text-align: left;
   @include media($mobile) {
     @include span-columns(4);
+    padding: 0 5%;
   }
 }
 .dash {
   width: em(30);
-  border-top: 2px solid #4A90E2;
+  border-top: 2px solid #4a90e2;
   display: table;
 }
 .dash-container {
-  display:100%;
+  display: 100%;
 }
-.dash-center{
+.dash-center {
   margin: 60px auto 70px;
   text-align: -webkit-center;
 }
-.dash-left{
+.dash-left {
   text-align: -webkit-left;
-  margin: 0px 0px 40px;
+  margin: 0 0 40px;
 }
-.dash-center--intro{
-  margin: 10% auto 10%;
+.dash-center--intro {
+  margin: 10% auto;
   text-align: center;
   border-top: 2px solid #ccc;
 }

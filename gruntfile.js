@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         separator: ';', sourceMap: true,
       },
       dist: {
-        src: ['js/plugins.js', 'js/classie.js', 'js/main.js' ],
+        src: ['bower_components/modernizr/modernizr.js' ,'js/plugins.js', 'js/classie.js','js/menu.js' , 'js/main.js' ],
         dest: 'build/js/base.js',
       },
     },

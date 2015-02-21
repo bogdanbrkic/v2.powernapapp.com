@@ -16,17 +16,11 @@
     @include span-columns(4);
     display: none;
   }
-  @include media($mobile-up) {
-    padding-left: 4%;
-  }
 }
 .left-content--img {
   float: right;
-
-  @include media($mobile) {
-
-  }
 }
+
 .intro--right-content {
   @include span-columns(7);
   margin-top: 110px;
@@ -35,21 +29,14 @@
     @include span-columns(4);
   }
 }
-.intro--logo {
-
-}
 
 h1.intro--title {
   font-family: Roboto;
   font-weight: 500;
-  font-size: em(100);
+  font-size: 3em;
   color: #fff;
   line-height: 132px;
   // transition: all 0.5s ease;
-
-  @include media($mobile-up) {
-    font-size: em(50);
-  }
 }
 .intro--subtitle{
   font-family: Helvetica;

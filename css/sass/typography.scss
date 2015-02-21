@@ -1,7 +1,5 @@
 /**/
-
 $nav-font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
-
 /**/
 html,
 body {
@@ -21,11 +19,16 @@ h1 {
 h2.story-big-title {
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: rem(60);
   color: #333;
   line-height: 64px;
   margin-top: 0;
   margin-bottom: rem(200);
+  @include media($mobile) {
+    font-size: em(30);
+    margin-bottom: em(24);
+    line-height: em(24);
+  }
 }
 h2.reset-bottom-margin {
   margin-bottom: rem(50);
@@ -50,15 +53,20 @@ p {
   font-size: 20px;
   color: #999;
   line-height: 30px;
+  @include media($mobile) {
+    font-size: 18px;
+  }
 }
 .steps-txt {
   margin-bottom: rem(60);
 }
-p.first {
 
-}
 p.last {
   margin-bottom: rem(60);
+
+  @include media($mobile) {
+    padding: 0 5%;
+  }
 }
 /* read more: */
 .read-more {
@@ -76,4 +84,11 @@ h4.story-sub-sub-title {
   font-size: 28px;
   color: #999;
   line-height: 40px;
+
+  @include media($mobile) {
+    font-size: 20px;
+    color: #999;
+    line-height: 28px;
+    padding: 0 10%;
+  }
 }
