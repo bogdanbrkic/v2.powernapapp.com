@@ -1,94 +1,102 @@
 /**/
 $nav-font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
+
 /**/
 html,
 body {
-  font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
-  //@TODO set for title helv and fallback on roboto an body in roboto
-  // font-family: "Roboto";
-  font-size: em(16);
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
+    font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
+    //@TODO set for title helv and fallback on roboto an body in roboto
+    // font-family: "Roboto";
+    font-size: em(16);
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
+
 h1 {
-  margin: 0.25em;
+    margin: 0.25em;
 }
+
 h2.story-big-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: rem(60);
-  color: #333;
-  line-height: 64px;
-  margin-top: 0;
-  margin-bottom: rem(200);
-  @include media($mobile) {
-    font-size: em(30);
-    margin-bottom: em(24);
-    line-height: em(24);
-  }
+    text-align: center;
+    font-weight: 700;
+    font-size: rem(60);
+    color: #333;
+    line-height: 64px;
+    margin-top: 0;
+    margin-bottom: rem(200);
+    @include media($mobile) {
+        font-size: em(30);
+        margin-bottom: em(24);
+        line-height: em(24);
+    }
 }
+
 h2.reset-bottom-margin {
-  margin-bottom: rem(50);
+    margin-bottom: rem(50);
 }
+
 /* 01 ROLL TO SET TIME: */
 .steps-title,
 .story-sub-title {
-  font-weight: 500;
-  font-size: 20px;
-  color: #333;
-  letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 4px;
 }
+
 .steps-title--number {
-  color: #dad8d8;
-  margin-right: em(10);
+    color: #dad8d8;
+    margin-right: em(10);
 }
+
 /* paragraph
 font-family: Roboto-Thin; */
 p {
-  font-family: Roboto;
-  font-weight: 100;
-  font-size: 20px;
-  color: #999;
-  line-height: 30px;
-  @include media($mobile) {
-    font-size: 18px;
-  }
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 20px;
+    color: #999;
+    line-height: 30px;
+    @include media($mobile) {
+        font-size: 18px;
+    }
 }
+
 .steps-txt {
-  margin-bottom: rem(60);
+    margin-bottom: rem(60);
 }
 
 p.last {
-  margin-bottom: rem(60);
-
-  @include media($mobile) {
-    padding: 0 5%;
-  }
+    margin-bottom: rem(60);
+    @include media($mobile) {
+        padding: 0 5%;
+    }
 }
+
 /* read more: */
 .read-more {
-  // font-family: Helvetica;
-  // font-weight: 500;
-  font-size: 16px;
-  color: #000;
-  letter-spacing: 4px;
-  text-decoration: none;
+    // font-family: Helvetica;
+    // font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 4px;
+    text-decoration: none;
 }
-h4.story-sub-sub-title {
-  /* These 30 minutes can.. */
-  font-family: Roboto;
-  font-weight: 100;
-  font-size: 28px;
-  color: #999;
-  line-height: 40px;
 
-  @include media($mobile) {
-    font-size: 20px;
+h4.story-sub-sub-title {
+    /* These 30 minutes can.. */
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 28px;
     color: #999;
-    line-height: 28px;
-    padding: 0 10%;
-  }
+    line-height: 40px;
+    @include media($mobile) {
+        font-size: 20px;
+        color: #999;
+        line-height: 28px;
+        padding: 0 10%;
+    }
 }

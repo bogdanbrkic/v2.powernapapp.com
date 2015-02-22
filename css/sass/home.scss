@@ -1,68 +1,75 @@
 /* index */
-.intro-bckg--img {
-  background: url("../../img/top-content-photo.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.intro--content {
-  padding-bottom: 5%;
-  padding-top: 5%;
-}
-.intro--left-content {
-  @include span-columns(5);
 
-  @include media($mobile) {
-    @include span-columns(4);
-    display: none;
-  }
+.intro-bckg--img {
+    background: url("../../img/top-content-photo.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
+.intro--content {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.intro--left-content {
+    @include span-columns(5);
+    @include media($mobile) {
+        @include span-columns(4);
+        display: none;
+    }
+}
+
 .left-content--img {
-  float: right;
+    float: right;
 }
 
 .intro--right-content {
-  @include span-columns(7);
-  margin-top: 110px;
-
-  @include media($mobile) {
-    @include span-columns(4);
-  }
+    @include span-columns(7);
+    margin-top: 110px;
+    @include media($mobile) {
+        @include span-columns(4);
+    }
 }
 
 h1.intro--title {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 3em;
-  color: #fff;
-  line-height: 132px;
-  // transition: all 0.5s ease;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 3em;
+    color: #fff;
+    line-height: 132px;
+    // transition: all 0.5s ease;
 }
-.intro--subtitle{
-  font-family: Helvetica;
-  font-size: 20px;
-  color: #fff;
-  letter-spacing: 4px;
+
+.intro--subtitle {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 4px;
 }
+
 .intro--dash {
-  margin-left: 19.25em;
-  border-top: 1px solid #ccc;
-  width: em(30);
+    margin-left: 19.25em;
+    border-top: 1px solid #ccc;
+    width: em(30);
 }
+
 .intro--btn-copy,
 .footer--btn-copy {
-  /* Available on App Sto: */
-  font-weight: 300;
-  font-size: 16px;
-  color: #999;
+    /* Available on App Sto: */
+    font-weight: 300;
+    font-size: 16px;
+    color: #999;
 }
+
 .intro-msg {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 60px;
-  color: #333;
-  line-height: 64px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 60px;
+    color: #333;
+    line-height: 64px;
 }
+
 .l-col--steps-mtop {
-  margin-top: em(40);
+    margin-top: em(40);
 }
