@@ -105,11 +105,17 @@ a.btn--black {
 
 .story-l-col {
     @include span-columns(6);
+    @include media($mobile) {
+        @include span-columns(4);
+    }
 }
 
 .story-r-col {
     @include span-columns(6);
     text-align: left;
+    @include media($mobile) {
+        @include span-columns(4);
+    }
 }
 
 .dash {
