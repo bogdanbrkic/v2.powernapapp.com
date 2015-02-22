@@ -33,13 +33,13 @@ header {
 .row {
     @include row;
     @include outer-container;
-    @include media($tablet) {
-        padding: 0 4%;
-        // @TODO samo za ispod desktopa .. tak oda svi imaju marigne leve i desne ..
+    @include media($mobile) {
+        padding: 0 5% 0;
     }
 
-    @include media($mobile) {
-        padding: 0 5%;
+    @include media($tablet) {
+        padding: 0 5% 0;
+        // @TODO samo za ispod desktopa .. tak oda svi imaju marigne leve i desne ..
     }
 }
 
@@ -131,6 +131,10 @@ a.btn--black {
 .dash-center {
     margin: 60px auto 70px;
     text-align: -webkit-center;
+
+    @include media($mobile) {
+      margin: 30px auto 35px;
+    }
 }
 
 .dash-left {

@@ -70,9 +70,6 @@ p {
 
 p.last {
     margin-bottom: rem(60);
-    @include media($mobile) {
-        padding: 0 5%;
-    }
 }
 
 /* read more: */

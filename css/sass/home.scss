@@ -5,11 +5,18 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    @include media($mobile) {
+      padding-top: 15%;
+      padding-bottom: 15%;
+    }
 }
 
 .intro--content {
-    padding-bottom: 5%;
-    padding-top: 5%;
+    // padding-bottom: 5%;
+    // padding-top: 5%;
 }
 
 .intro--left-content {
@@ -40,6 +47,10 @@ h1.intro--title {
     color: #fff;
     line-height: 3.2em;
     // transition: all 0.5s ease;
+    @include media($mobile) {
+      font-size: 2.2em;
+    }
+
 }
 
 .intro--subtitle {
