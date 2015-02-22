@@ -13,7 +13,7 @@
 }
 
 .intro--left-content {
-    @include span-columns(5);
+    @include span-columns(6);
     @include media($mobile) {
         @include span-columns(4);
         display: none;
@@ -25,10 +25,11 @@
 }
 
 .intro--right-content {
-    @include span-columns(7);
+    @include span-columns(6);
     margin-top: 110px;
     @include media($mobile) {
         @include span-columns(4);
+        margin-top: 40px;
     }
 }
 
@@ -37,7 +38,7 @@ h1.intro--title {
     font-weight: 500;
     font-size: 3em;
     color: #fff;
-    line-height: 132px;
+    line-height: 3.2em;
     // transition: all 0.5s ease;
 }
 

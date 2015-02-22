@@ -152,6 +152,10 @@ nav {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     text-decoration: none;
+
+    @include media($mobile) {
+      font-size: 36px;
+    }
 }
 
 .overlay-menu ul li a:hover,
