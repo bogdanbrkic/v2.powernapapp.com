@@ -7,6 +7,10 @@ img {
     max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* header */
 header {
     @include row;
@@ -206,7 +210,7 @@ a.btn--black {
     font-family: Roboto;
     font-weight: 100;
     font-size: 14px;
-    color: #dad8d8;
+    color: #A8A8A8;//#dad8d8;
     letter-spacing: 2px;
     margin-top: 30px;
 }
