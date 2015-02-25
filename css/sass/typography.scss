@@ -4,9 +4,8 @@ $nav-font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
 /**/
 html {
     font-family: Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
-    //@TODO set for title helv and fallback on roboto an body in roboto
     // font-family: "Roboto";
-    font-size: em(16);
+    font-size: 100%;
     text-rendering: geometricPrecision;
     font-smooth: always;
     font-smoothing: antialiased;
@@ -57,16 +56,17 @@ p {
     font-family: Roboto;
     font-weight: 100;
     font-size: 20px;
-    color: #999;
+    color: #5F5F5F;
     line-height: 30px;
+
     @include media($mobile) {
         font-size: 18px;
     }
 }
 
 .steps-txt {
-    margin-bottom: em(60);
-    padding-left: em(42);
+    margin-bottom: rem(60);
+    padding-left: rem(42);
 }
 
 p.last {

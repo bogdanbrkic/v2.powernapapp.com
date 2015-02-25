@@ -47,6 +47,14 @@ header {
     }
 }
 
+.txt-mlr {
+  padding: 0 10% 0;
+
+  @include media($tablet) {
+    padding: 0;
+  }
+}
+
 /* button */
 input[type="submit"],
 button.btn,
@@ -66,7 +74,7 @@ a.btn--black {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
     display: inline-block;
     outline: none;
-    padding: 1em 3em 1em 1.8em;
+    padding: 1.1em 3em 1em 1.8em;
     left: 0;
     position: relative;
 }
@@ -74,7 +82,7 @@ a.btn--black {
 .get-this-app-white,
 .get-this-app-black {
     position: absolute;
-    top: em(8);
+    top: em(10);
     right: em(20);
 }
 
@@ -88,7 +96,7 @@ a.btn--black {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
     display: inline-block;
     outline: none;
-    padding: 1em 3em 1em 1.8em;
+    padding: 1.1em 3em 1em 1.8em;
     left: 0;
     position: relative;
 }
