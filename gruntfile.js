@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         separator: ';', sourceMap: true,
       },
       dist: {
-        src: ['bower_components/modernizr/modernizr.js' ,'js/plugins.js', 'js/classie.js','js/menu.js' , 'js/main.js' ],
+        src: ['bower_components/modernizr/modernizr.js' ,'js/plugins.js', 'js/classie.js', 'js/main.js' ],
         dest: 'build/js/base.js',
       },
     },
@@ -99,8 +99,8 @@ module.exports = function(grunt) {
   });
 
   //run all
-   grunt.registerTask('all', ['buildjs', 'buildcss', 'imageoptim' , 'cacheBust']);
-  // grunt.registerTask('all', ['buildjs', 'buildcss', 'cacheBust']);
+  grunt.registerTask('all', ['buildjs', 'buildcss', 'imageoptim' , 'cacheBust']);
+  grunt.registerTask('all--img', ['buildjs', 'buildcss', 'cacheBust']);
 
 
   //run small tasks:
