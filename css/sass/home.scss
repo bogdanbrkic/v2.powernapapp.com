@@ -42,11 +42,12 @@
 }
 
 .intro--left-content {
-    @include span-columns(6);
-    @include media($mobile) {
-        @include span-columns(4);
-        display: none;
-    }
+  position: relative;
+  @include span-columns(6);
+  @include media($mobile) {
+      @include span-columns(4);
+      display: none;
+  }
 }
 
 .left-content--img {
@@ -54,8 +55,8 @@
 }
 
 .intro--right-content {
-/*    @include span-columns(6);
-    margin-top: 110px;
+   @include span-columns(6);
+/*     margin-top: 110px;
     @include media($mobile) {
         @include span-columns(4);
         margin-top: 40px;
