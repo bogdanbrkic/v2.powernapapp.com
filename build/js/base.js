@@ -1514,6 +1514,8 @@ if ( typeof define === 'function' && define.amd ) {
  */
  ;
  console.log('Hello visitor & wellcome to powenap app.');
+  console.log('---');
+ console.log('made by afterwork team @ afterworkspace.com');
 
 
 /* =======================================
@@ -1527,7 +1529,7 @@ if ( typeof define === 'function' && define.amd ) {
     $section = $el.parent(),
     min_w = 300,
     video_w = 16,
-    video_h = 9,
+    video_h = 10,
     section_w = $section.outerWidth(),
     section_h = $section.outerHeight(),
     scale_w = section_w / video_w,
@@ -1558,5 +1560,23 @@ if ( typeof define === 'function' && define.amd ) {
  */
  $(window).on('resize', function() {
   resizeVideoBackground();
+});
+
+ /* =======================================
+ * On win load
+ * =======================================
+ */
+$(window).load(function() {
+
+  console.log('window loaded..');
+
+  //$( '#preloader' ).fadeOut( 1000, function() {
+    $( 'body' ).addClass( 'preloader-done' );
+    $( '.hp__intro' ).css( "display", "block" );
+    resizeVideoBackground();
+    //remove AW
+    $( '#preloader' ).addClass( 'start-opacity' );
+  //});
+
 });
 //# sourceMappingURL=base.js.map

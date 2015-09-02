@@ -1,5 +1,27 @@
 /* index */
 
+.hp__intro {
+  display:block; // while preload hide
+  position: relative;
+   @include row;
+  height: 900px;
+
+  @include media($mobile) {
+    height: 500px;
+  }
+  .bckg {
+    height: 100%;
+  }
+  .hp__intro--video {
+    height: auto;
+  }
+  .content {
+     position: relative;
+     height: inherit;
+     padding-top: 2.5%;
+  }
+}
+
 .intro-bckg--img {
     background: url("../../img/intro-cover.jpg");
     background-size: cover;
@@ -32,12 +54,12 @@
 }
 
 .intro--right-content {
-    @include span-columns(6);
+/*    @include span-columns(6);
     margin-top: 110px;
     @include media($mobile) {
         @include span-columns(4);
         margin-top: 40px;
-    }
+    }*/
 }
 
 h1.intro--title {
