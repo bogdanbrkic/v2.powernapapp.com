@@ -1,13 +1,15 @@
 /* index */
-
 .hp__intro {
-  display:block; // while preload hide
+  display: block; // while preload hide
   position: relative;
-   @include row;
-  height: 900px;
+  @include row;
 
+  // height: 900px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   @include media($mobile) {
-    height: 500px;
+
+    // height: 500px;
   }
   .bckg {
     height: 100%;
@@ -16,95 +18,91 @@
     height: auto;
   }
   .content {
-     position: relative;
-     height: inherit;
-     padding-top: 2.5%;
+    position: relative;
+    height: inherit;
+    padding-top: 2.5%;
   }
 }
-
 .intro-bckg--img {
-    background: url("../../img/intro-cover.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-    @include media($mobile) {
-      padding-top: 15%;
-      padding-bottom: 15%;
-    }
+  background: url("../../img/intro-cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @include media($mobile) {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
 }
-
-.intro--content {
-    // padding-bottom: 5%;
-    // padding-top: 5%;
-}
-
 .intro--left-content {
   position: relative;
   @include span-columns(6);
   @include media($mobile) {
-      @include span-columns(4);
-      display: none;
+    @include span-columns(4);
+    display: none;
   }
 }
 
+#video-hero {
+  position: absolute;
+  top: 108px;
+  left: 28px;
+  height: 587px;
+
+  @include media($tablet) {
+    display: none;
+  }
+}
 .left-content--img {
-    float: right;
+  // float: right;
 }
-
 .intro--right-content {
-   @include span-columns(6);
-/*     margin-top: 110px;
-    @include media($mobile) {
-        @include span-columns(4);
-        margin-top: 40px;
-    }*/
-}
+  @include span-columns(6);
+  margin-top: 8%;
 
+  @include media($mobile) {
+    margin-top: 0%;
+    @include span-columns(4);
+  }
+}
 h1.intro--title {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 3em;
-    color: #fff;
-    line-height: 3.2em;
-    // transition: all 0.5s ease;
-    @include media($mobile) {
-      font-size: 2.2em;
-    }
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 3em;
+  color: #202020;
+  line-height: 3.2em;
 
+  // transition: all 0.5s ease;
+  @include media($mobile) {
+    font-size: 2.2em;
+  }
 }
-
 .intro--subtitle {
-    font-family: Helvetica;
-    font-size: 20px;
-    color: #fff;
-    letter-spacing: 4px;
+  font-family: Helvetica;
+  font-size: 20px;
+  color: #202020;
+  letter-spacing: 4px;
 }
-
 .intro--dash {
-    margin-left: 19.25em;
-    border-top: 1px solid #ccc;
-    width: em(30);
+  margin-left: 19.25em;
+  border-top: 1px solid #ccc;
+  width: em(30);
 }
-
 .intro--btn-copy,
 .footer--btn-copy {
-    /* Available on App Sto: */
-    font-weight: 300;
-    font-size: 16px;
-    color: #999;
+  /* Available on App Sto: */
+  font-weight: 300;
+  font-size: 16px;
+  color: #999;
 }
-
 .intro-msg {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 60px;
-    color: #333;
-    line-height: 64px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 60px;
+  color: #333;
+  line-height: 64px;
 }
-
 .l-col--steps-mtop {
-    margin-top: em(40);
+  margin-top: em(40);
 }
