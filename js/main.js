@@ -6,6 +6,8 @@
  console.log('Hello visitor & wellcome to powenap app.');
  console.log('---');
  console.log('made by afterwork team @ afterworkspace.com');
+ console.log('contact: contact@afterworkspace.com');
+ console.log('---');
 
 
 /* =======================================
@@ -49,7 +51,7 @@
  * =======================================
  */
  $(window).on('resize', function() {
-  resizeVideoBackground();
+  // resizeVideoBackground();
 });
 
  /* =======================================
@@ -58,14 +60,14 @@
  */
 $(window).load(function() {
 
-  console.log('window loaded..');
+  // console.log('window loaded..');
 
   //$( '#preloader' ).fadeOut( 1000, function() {
-    $( 'body' ).addClass( 'preloader-done' );
-    $( '.hp__intro' ).css( "display", "block" );
-    resizeVideoBackground();
+    // $( 'body' ).addClass( 'preloader-done' );
+    // $( '.hp__intro' ).css( "display", "block" );
+    // resizeVideoBackground();
     //remove AW
-    $( '#preloader' ).addClass( 'start-opacity' );
+    // $( '#preloader' ).addClass( 'start-opacity' );
   //});
 
 });
