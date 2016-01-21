@@ -1514,7 +1514,7 @@ if ( typeof define === 'function' && define.amd ) {
  */
  ;
  console.log('Hello visitor & wellcome to powenap app.');
-  console.log('---');
+ console.log('---');
  console.log('made by afterwork team @ afterworkspace.com');
 
 
@@ -1579,4 +1579,5 @@ $(window).load(function() {
   //});
 
 });
+
 //# sourceMappingURL=base.js.map
