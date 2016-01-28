@@ -1,0 +1,13 @@
+.about-pg {
+    @include row;
+    padding: 0 10% 0;
+    @include outer-container;
+    @include media($mobile) {
+        padding: 0 20% 0;
+    }
+
+    @include media($tablet) {
+        padding: 0 5% 0;
+        // @TODO samo za ispod desktopa .. tak oda svi imaju marigne leve i desne ..
+    }
+}
