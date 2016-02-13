@@ -43,10 +43,16 @@
 
 .intro--left-content {
     @include span-columns(6);
+
     @include media($mobile) {
         @include span-columns(4);
         display: none;
     }
+}
+
+.intro--left-video{
+  position: relative;
+
 }
 
 .left-content--img {
@@ -55,9 +61,14 @@
 
 #video-hero {
   position: absolute;
-  top: 108px;
-  left: 28px;
-  height: 587px
+  top: 111px;
+  left: 201px;
+  height: 582px;
+
+  @include media($tablet) {
+    display: none !important;
+    visibility: hidden;
+  }
 }
 
 .intro--right-content {

@@ -1,13 +1,33 @@
 .about-pg {
     @include row;
-    padding: 0 10% 0;
+    padding: 5% 10% 5%;
     @include outer-container;
+
     @include media($mobile) {
-        padding: 0 20% 0;
+        padding: 8% 4%;
     }
 
     @include media($tablet) {
-        padding: 0 5% 0;
+        padding: 10% 5%;
         // @TODO samo za ispod desktopa .. tak oda svi imaju marigne leve i desne ..
+    }
+
+    .story-big-title{
+      margin-bottom: 6rem;
+    }
+
+    h2{
+      padding-top: 2%;
+      font-weight: 300;
+    }
+
+    ul {
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 2em;
+
+      @include media($mobile) {
+        font-size: 1.6em;
+      }
     }
 }

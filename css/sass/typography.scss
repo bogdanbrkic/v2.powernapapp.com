@@ -81,6 +81,13 @@ p.last {
     color: #000;
     letter-spacing: 4px;
     text-decoration: none;
+    // padding-bottom: 1rem;
+    padding-top: 0.7rem;
+
+    &:hover{
+      // border-bottom: 1px solid #4a90e2;
+      color: #4a90e2;
+    }
 }
 
 .story-sub-sub-title {
